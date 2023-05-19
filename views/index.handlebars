@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Preencha as informações do produto</h1>
+    <form action="/" method="POST">
+      <label for="produto">Produto:</label><br />
+      <input type="text" id="produto" name="produto" /><br />
+
+      <label for="marca">Marca:</label><br />
+      <input type="text" id="marca" name="marca" /><br />
+
+      <label for="modelo">Modelo:</label><br />
+      <input type="text" id="modelo" name="modelo" /><br />
+
+      <input type="submit" value="Gerar Descrição" />
+    </form>
+
+    {{#if descricao}}
+      <h2>Descrição:</h2>
+      <p>{{descricao}}</p>
+      <h2>Palavras-chave:</h2>
+      <p>{{palavrasChave}}</p>
+    {{/if}}
+  </body>
+</html>
