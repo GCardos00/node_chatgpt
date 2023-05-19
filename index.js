@@ -6,7 +6,7 @@ const Product = require("./models/Product");
 
 const app = express();
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "";
 
 app.engine("handlebars", handlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
